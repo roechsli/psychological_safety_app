@@ -1,0 +1,17 @@
+mat-slider {
+    width: 300px;
+  }
+
+mat-card { margin: 5%; text-align:center; background-color: azure;}
+
+.left, .right {
+  width: 50%; /* Floated elements technically need a width specified. */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

@@ -28,6 +28,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ### Decisions
 
+- Use material UI for low effort/high yield
+
 ### Left out
 
 - backend
@@ -36,7 +38,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Effort estimation
 
-I believe the frontend should take roughly 7 hours.
+I believe the frontend should take roughly 7 hours in total.
 
 - [ ] create code skeleton for frontend app - 1.0
 - [ ] create questions page - 1.5
@@ -45,8 +47,7 @@ I believe the frontend should take roughly 7 hours.
 - [ ] review, refactoring - 1.0
 - [ ] others - 1.0
 
-Total 7 hours.
-
 ## Used resources
 
-tbd
+card - https://material.angular.io/components/card/overview
+inputs - https://angular.io/guide/inputs-outputs
