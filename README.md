@@ -1,4 +1,6 @@
-# CodingChallenge
+# Coding Challenge: Mini Survey Tool
+
+Coding challenge for fable plus.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
@@ -6,22 +8,45 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Requirements:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- ask questions
+- get user input
+- display analyzed input
+- answers from 0 to 100
+- all questions must be answered to submit form
+- must be runnable on localhost:3000
+- runnable with npm run dev
 
-## Build
+## Priorities:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- functional
+- coding style
+- UX and UI
 
-## Running unit tests
+## Remarks
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Decisions
 
-## Running end-to-end tests
+### Left out
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- backend
+- database
+- infrastructure
 
-## Further help
+## Effort estimation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+I believe the frontend should take roughly 7 hours.
+
+- [ ] create code skeleton for frontend app - 1.0
+- [ ] create questions page - 1.5
+- [ ] create results page - 1.5
+- [ ] enhance UX - 1.0
+- [ ] review, refactoring - 1.0
+- [ ] others - 1.0
+
+Total 7 hours.
+
+## Used resources
+
+tbd
