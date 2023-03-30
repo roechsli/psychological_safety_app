@@ -9,7 +9,6 @@ import { Question } from "src/app/models/question.model";
 export class QuestionPageComponent {
   title = "Coding Challenge: Mini Survey Tool";
   public questions: Question[];
-  public texts: string[] = ["hi", "du", "ich"];
 
   constructor() {
     this.questions = [
@@ -24,6 +23,15 @@ export class QuestionPageComponent {
   }
 
   onClickMe() {
+    this.questions.forEach((question: Question) => console.log(question));
+
+    if (
+      this.questions.every((question: Question) => question.value != undefined)
+    ) {
+      // TODO do something here
+    } else {
+      alert("Fill out all questions first.");
+    }
     return;
   }
 }

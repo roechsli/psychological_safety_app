@@ -2,11 +2,14 @@
     <mat-card-content>
         <h1>{{this.question?.text}}</h1>
         <p></p>
-        <div class="left">I strongly disagree</div>
-        <div class="right">I strongly agree</div>
+        <div class="left" [style.font-size.px]="convertToFontSize(100 - this.question?.value!)">I strongly agree</div>
+        <div class="right" [style.font-size.px]=convertToFontSize(this.question?.value)>I strongly disagree
+        </div>
 
-        <mat-slider>
+        <!-- TODO set slider at 50 by default -->
+        <mat-slider step="5" min="0" max="100" (input)="onInputChange($event)">
             <input matSliderThumb>
         </mat-slider>
+        <h5>{{this.question!.value}}</h5>
     </mat-card-content>
 </mat-card>
