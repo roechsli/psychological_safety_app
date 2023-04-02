@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-card-content>
+        <h1>Your zone: {{quadrant}} zone</h1>
+        {{outcomes[quadrant]}}
+
+        <h2>Motivational Drivers</h2>
+        <div>
+            <div class="left">
+                <img src="/assets/images/motivation.png" alt="motivation" width="40px">
+            </div>
+            <div class="right">
+                {{motivDrivers[quadrant]}}
+            </div>
+        </div>
+
+        <h2>Psychological Safety</h2>
+        <div>
+            <div class="left">
+                <img src="/assets/images/safety.png" alt="safety" width="40px">
+            </div>
+            <div class="right">
+                {{psychoSafeties[quadrant]}}
+            </div>
+        </div>
+
+    </mat-card-content>
+</mat-card>

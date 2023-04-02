@@ -1,5 +1,11 @@
 <div class="center">
     <h1>{{title}}</h1>
-</div>
+    <div class="left">
 
-<app-grid-plot [xValue]="this.result?.psychoVal!" [yValue]="this.result?.motivVal!"></app-grid-plot>
+        <app-grid-plot [xValue]="this.result?.motivVal!" [yValue]="this.result?.psychoVal!"></app-grid-plot>
+    </div>
+    <div class="right">
+        <app-explanation-card [quadrant]="getQuadrantFrom(this.result!)"></app-explanation-card>
+
+    </div>
+</div>

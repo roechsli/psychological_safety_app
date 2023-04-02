@@ -15,3 +15,10 @@ mat-card { margin: 5%; text-align:center; background-color: azure;}
 .right {
   float: right;
 }
+
+.warning-symbol {
+  position: absolute;
+  float: left;
+  top: 50%;
+  transform: translateY(-50%);
+}

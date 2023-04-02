@@ -9,6 +9,7 @@ import { Question } from "../models/question.model";
 export class QuestionCardComponent {
   @Input() question: Question | undefined;
   @Output() questionChange = new EventEmitter<Question>();
+  @Input() checked: boolean = false;
 
   constructor() {}
 

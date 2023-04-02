@@ -2,7 +2,7 @@
     <h1>{{title}}</h1>
 
     <ng-template ngFor let-item [ngForOf]="questions" let-i="index">
-        <app-question-card [question]="questions[i]"></app-question-card>
+        <app-question-card [question]="questions[i]" [checked]="checked"></app-question-card>
     </ng-template>
 
     <div class="button-container">

@@ -11,6 +11,7 @@ import { Result } from "../models/result.model";
 export class QuestionPageComponent {
   title = "Coding Challenge: Mini Survey Tool";
   public questions: Question[];
+  checked: boolean = false;
 
   constructor(private router: Router) {
     this.questions = [
@@ -38,6 +39,7 @@ export class QuestionPageComponent {
       const result = this.getResult();
       this.router.navigateByUrl("/results", { state: result });
     } else {
+      this.checked = true;
       alert("Fill out all questions first.");
     }
     return;
@@ -52,7 +54,7 @@ export class QuestionPageComponent {
       psychological += (question.value ?? 0) * question.psychologicalFactor;
     });
 
-    const result = new Result(motivational, psychological);
+    const result = new Result(100 - motivational, 100 - psychological);
     return result;
   }
 }

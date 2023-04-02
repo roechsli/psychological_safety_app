@@ -28,7 +28,8 @@
     width: 300px;
     height: 300px;
     margin: 0 auto;
-    border: 2px solid #333;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
     --x: 50;
     /* default x-coordinate value */
     --y: 50;
@@ -38,15 +39,15 @@
 .x-axis {
     position: absolute;
     top: 50%;
-    left: 0;
-    right: 0;
+    left: 5%;
+    right: 5%;
     border-top: 1px solid #333;
 }
 
 .y-axis {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 5%;
+    bottom: 5%;
     left: 50%;
     border-left: 1px solid #333;
 }
@@ -55,7 +56,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #800;
+    background-color: #7B1FA2;
 }
 
 #placed {

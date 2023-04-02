@@ -12,9 +12,10 @@ import { MatSliderModule } from "@angular/material/slider";
 import { ResultsPageComponent } from './results-page/results-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { GridPlotComponent } from './grid-plot/grid-plot.component';
+import { ExplanationCardComponent } from './explanation-card/explanation-card.component';
 
 @NgModule({
-  declarations: [AppComponent, QuestionCardComponent, QuestionPageComponent, ResultsPageComponent, GridPlotComponent],
+  declarations: [AppComponent, QuestionCardComponent, QuestionPageComponent, ResultsPageComponent, GridPlotComponent, ExplanationCardComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
