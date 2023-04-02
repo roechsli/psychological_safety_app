@@ -51,3 +51,4 @@ I believe the frontend should take roughly 7 hours in total.
 
 card - https://material.angular.io/components/card/overview
 inputs - https://angular.io/guide/inputs-outputs
+routing - https://www.makeuseof.com/routing-angular-basic/#:~:text=You%20can%20route%20between%20multiple,routing%20path%20to%20that%20page.

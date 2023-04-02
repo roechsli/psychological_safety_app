@@ -9,9 +9,12 @@ import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
 import { MatSliderModule } from "@angular/material/slider";
+import { ResultsPageComponent } from './results-page/results-page.component';
+import { AppRoutingModule } from './app-routing.module';
+import { GridPlotComponent } from './grid-plot/grid-plot.component';
 
 @NgModule({
-  declarations: [AppComponent, QuestionCardComponent, QuestionPageComponent],
+  declarations: [AppComponent, QuestionCardComponent, QuestionPageComponent, ResultsPageComponent, GridPlotComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -19,6 +22,7 @@ import { MatSliderModule } from "@angular/material/slider";
     MatCardModule,
     MatButtonModule,
     MatSliderModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -7,7 +7,7 @@
         </div>
 
         <!-- TODO set slider at 50 by default -->
-        <mat-slider step="5" min="0" max="100" (input)="onInputChange($event)">
+        <mat-slider value="50" step="5" min="0" max="100" (input)="onInputChange($event)">
             <input matSliderThumb>
         </mat-slider>
         <h5>{{this.question!.value}}</h5>

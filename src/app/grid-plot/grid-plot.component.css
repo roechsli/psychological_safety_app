@@ -1,0 +1,116 @@
+.center {
+    margin: auto;
+    width: 350px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    align-content: center;
+}
+
+.legend-box {
+    margin-bottom: 1rem;
+}
+
+.legend {
+    float: left;
+    margin: 10px;
+    /* padding: 10px; */
+}
+
+.plot {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    --x: 50;
+    /* default x-coordinate value */
+    --y: 50;
+    /* default y-coordinate value */
+}
+
+.x-axis {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #333;
+}
+
+.y-axis {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid #333;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #800;
+}
+
+#placed {
+    position: absolute;
+    top: calc((100% - 10px) - ((var(--y) / 100) * 100%));
+    left: calc((var(--x) / 100) * 100% - 10px);
+}
+
+.quadrant-label {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 16px;
+}
+
+#q1 {
+    top: 40%;
+    left: 75%;
+}
+
+#q2 {
+    top: 40%;
+    left: 25%;
+}
+
+#q3 {
+    top: 60%;
+    left: 25%;
+}
+
+#q4 {
+    top: 60%;
+    left: 75%;
+}
+
+.rotated {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+}
+
+.labels {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#x-label {
+    transform: translateX(-50%);
+    bottom: -25px;
+    left: 50%;
+}
+
+#y-label {
+    transform: translateY(50%);
+    bottom: 50%;
+    left: -25px;
+}
